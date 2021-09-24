@@ -20,6 +20,18 @@ awareness of things of social events, and be able to stay connected with people 
 that there are tons of social media sites to compare to, but our competitors will be tested through our niche market of one of the top content creators
 
 
+Data Overview
+
+Name                                                                      Description                                             Data Type
+First Name                                                                First name for your profile                             String
+Last Name                                                                 Last name for your profile                              String 
+University Name                                                           College Name 3 Options(FAU/FIU/FSU)                     String/HTML Dropdown button with options
+BIO (field)                                                               Field in profile for expressing yourself                String
+The Mural                                                                 The post or tweet to your friends and community         String
+
+
+
+
 Chep’s Features
 1.)Niche vital marketing group
 2.)College business promotions
