@@ -64,12 +64,20 @@ function pwdMatch($pwd, $pwdrepeat) {
 // Insert new user into database
 function createUser($conn, $name, $email, $university, $username, $pwd) {
 
-  $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+	$sql_u = "SELECT * FROM users WHERE usersUID='$username'";
+	$res_u = mysqli_query($conn, $sql_u);
 
-  $sql = "INSERT INTO users (usersName, usersEmail, usersUniversity, usersUID, usersPwd) VALUES ('$name', '$email', '$university', '$username', '$hashedPwd');";
-    mysqli_query($conn, $sql);
-	mysqli_close($conn);
-	header("location: ../signup.php?error=none");
+	if (mysqli_num_rows($res_u) > 0) {
+  	  header("location: ../signup.php?error=usernametaken");
+  	}
+	else{
+	$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+
+	$sql = "INSERT INTO users (usersName, usersEmail, usersUniversity, usersUID, usersPwd) VALUES ('$name', '$email', '$university', '$username', '$hashedPwd');";
+		mysqli_query($conn, $sql);
+		mysqli_close($conn);
+		header("location: ../signup.php?error=none");
+	}
 }
 
 // Check for empty input login
