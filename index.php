@@ -7,6 +7,12 @@
   <p>Discover posts related to your university!</p>
 </section>
 
+<?php
+ if (isset($_SESSION["useruid"])) {
+              echo "Welcome to the member's area, " . $_SESSION['usersName'] . "!";
+            }
+            ?>
+
 <section class="feed-example">
   <div id="feed-example-list">
     <div class="post-example">

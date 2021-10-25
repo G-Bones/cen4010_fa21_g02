@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$dBUsername = "cen4010_fa21_g02@localhost";
+$dBUsername = "root";
 $dBPassword = "";
 $dBName = "test";
 
