@@ -1,9 +1,9 @@
 <?php
 
-$servername = "lamp.cse.fau.edu";
-$dBUsername = "cen4010_fa21_g02@localhost";
-$dBPassword = "O7y4Zt8R5A";
-$dBName = "cen4010_fa21_g02";
+$servername = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "test";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 

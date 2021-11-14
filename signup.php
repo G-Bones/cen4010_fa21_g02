@@ -9,7 +9,12 @@
       <input type="text" name="name" placeholder="Full name...">
       <input type="text" name="email" placeholder="Email...">
       <input type="text" name="uid" placeholder="Username...">
-      <input type="text" name="university" placeholder="University...">
+      <label for="university" style="margin-top: 10px;">University... </label>
+      <select id="university" name="university">
+        <option value="FAU">FAU</option>
+        <option value="FSU">FSU</option>
+        <option value="UCF">UCF</option>
+      </select>
       <input type="password" name="pwd" placeholder="Password...">
       <input type="password" name="pwdrepeat" placeholder="Repeat password...">
       <button type="submit" name="submit">Sign up</button>
