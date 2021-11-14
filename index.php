@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="post-block__content mb-2">
-							<p><?php echo substr($q['postsText'], 0, 50);?></p>
+							<p><?php echo $q['postsText'];?></p>
 							<img src='uploads/<?php echo $q['postsImage'];?>' alt="Content img">
 						</div>
 						<hr>

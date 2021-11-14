@@ -17,7 +17,7 @@ include_once 'header.php';
 
     <textarea name="postsText" type="text1" placeholder="Share to your Class"></textarea>
   
-    <button name="send" class ="material-icons" placeholder="Post">Post</button>
+    <button name="send" placeholder="Post">Post</button>
   </form>
 
   </div>
