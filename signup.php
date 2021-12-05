@@ -14,6 +14,7 @@
         <option value="FAU">FAU</option>
         <option value="FSU">FSU</option>
         <option value="UCF">UCF</option>
+        <option value="USF">USF</option>
       </select>
       <input type="password" name="pwd" placeholder="Password...">
       <input type="password" name="pwdrepeat" placeholder="Repeat password...">

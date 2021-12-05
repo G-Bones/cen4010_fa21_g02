@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\About",
+    "\\About\\images",
     "\\css",
-    "\\img",
-    "\\includes",
-    "\\js"
+    "\\includes"
   ],
   "PreviewInSolutionExplorer": false
 }

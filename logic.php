@@ -13,7 +13,7 @@ $query = mysqli_query($conn, $query);
 if(isset($_REQUEST['send'])){
   $file = $_FILES['file'];
   $postsText = $_REQUEST["postsText"];
-  $postsUniversity = $_SESSION["userUniveristy"];
+  $postsUniversity = $_SESSION["useruniveristy"];
   $postsUsername = $_SESSION["useruid"];
   $postsTitle = $_REQUEST["postsTitle"];
 

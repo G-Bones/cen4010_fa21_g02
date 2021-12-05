@@ -3,12 +3,12 @@
   include "logic.php";
 ?>
 
-<section class="index-intro">
+<section class="index-intro m-auto">
   <h1>Your Feed</h1>
   <p>Discover posts related to your university!</p>
 </section>
 
-<section>   
+<section class="m-auto">   
         <!-- Display any info -->
         <?php if(isset($_REQUEST['info'])){ ?>
             <?php if($_REQUEST['info'] == "added"){?>
@@ -23,7 +23,7 @@
         <?php 
         if (isset($_SESSION["useruid"])) {
 
-        $useruni=$_SESSION['userUniveristy'];
+        $useruni=$_SESSION['useruniveristy'];
 
         $query1 = "SELECT * FROM posts WHERE postsUniversity='$useruni'";
         $query1 = mysqli_query($conn, $query1);
@@ -32,11 +32,11 @@
             <?php foreach($query1 as $q){ ?>
 
 
-        <section class="main-content">
+        <section class="main-content m-auto">
 		<div >
-			<div class="row">
-				<div class="col-sm-10 col-centered">
-					<div class="post-block">
+			<div class="row m-auto">
+				<div class="col-sm-10 m-auto">
+					<div class="post-block m-auto">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex mb-3">
 								<div>
@@ -45,22 +45,11 @@
 								</div>
    
 							</div>
-							<div class="post-block__user-options">
-								<a href="#!" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-											<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
-									<a class="dropdown-item text-dark" href="#!"><i class="fa fa-pencil mr-1"></i>Edit</a>
-									<a class="dropdown-item text-danger" href="#!"><i class="fa fa-trash mr-1"></i>Delete</a>
-								</div>
-							</div>
 						</div>
 						<div class="post-block__content mb-2">
 							<p><?php echo $q['postsText'];?></p>
 							<img src='uploads/<?php echo $q['postsImage'];?>' alt="Content img">
 						</div>
-						<hr>
 					</div>
 				</div>
 			</div>
